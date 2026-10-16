@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 250" width="772" height="250">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="xGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="1" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="772" height="250" fill="url(#bgGrad)" />
+  <rect width="772" height="250" fill="url(#gridPattern)" />
+
+  <!-- Shield Icon with Cyber X on the Left -->
+  <g transform="translate(45, 35)">
+    <!-- Outer Glow -->
+    <path d="M90 15 C130 15 155 30 155 70 C155 120 110 155 90 170 C70 155 25 120 25 70 C25 30 50 15 90 15 Z" 
+          fill="url(#shieldGrad)" stroke="#38bdf8" stroke-width="3" opacity="0.4"/>
+    <!-- Main Shield -->
+    <path d="M90 20 C125 20 148 34 148 70 C148 116 108 148 90 162 C72 148 32 116 32 70 C32 34 55 20 90 20 Z" 
+          fill="url(#shieldGrad)" stroke="url(#accentGrad)" stroke-width="3.5"/>
+    
+    <!-- Circuits -->
+    <path d="M90 45 L90 65 M60 90 L45 90 M120 90 L135 90 M90 115 L90 135" 
+          stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="45" cy="90" r="3.5" fill="#38bdf8" />
+    <circle cx="135" cy="90" r="3.5" fill="#38bdf8" />
+    
+    <!-- Central Glowing "X" -->
+    <path d="M72 72 L108 108 M108 72 L72 108" stroke="url(#xGrad)" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="90" cy="90" r="6" fill="#ffffff"/>
+  </g>
+
+  <!-- Typography & Brand Titles -->
+  <text x="250" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" fill="url(#textGrad)" letter-spacing="1">
+    WP SHIELD<tspan fill="#f43f5e">X</tspan>
+  </text>
+  <rect x="535" y="58" width="56" height="22" rx="11" fill="#0284c7" />
+  <text x="563" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">
+    v1.0
+  </text>
+
+  <!-- Tagline -->
+  <text x="250" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#38bdf8">
+    Active Firewall (WAF) • Real-Time File Integrity • Core Repair
+  </text>
+
+  <!-- Feature Pills -->
+  <g transform="translate(250, 140)">
+    <rect x="0" y="0" width="140" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="70" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" text-anchor="middle">
+      🛡️ Real-Time FIM
+    </text>
+
+    <rect x="150" y="0" width="165" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="232" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" text-anchor="middle">
+      ⚡ WP.org Core API Sync
+    </text>
+
+    <rect x="325" y="0" width="155" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="402" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" text-anchor="middle">
+      🚨 Instant Email Alerts
+    </text>
+  </g>
+
+  <!-- Developer Attribution Footer -->
+  <line x1="250" y1="195" x2="720" y2="195" stroke="#334155" stroke-width="1" />
+  <text x="250" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">
+    Developed by <tspan fill="#38bdf8" font-weight="700">saiarlen</tspan> • <tspan fill="#e2e8f0">www.saiarlen.com</tspan>
+  </text>
+</svg>
